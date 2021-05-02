@@ -1,0 +1,23 @@
+
+Gerenciando acessos e permissões com IAM
+
+Deploy:
+
+    Navegue até a página do Cloudformation no seu console AWS
+    Clique em create stack -> with new resources
+    Faça o upload do arquivo e siga as instruções para fazer o deploy
+
+Para testar:
+
+    Com um acesso admin, crie um usuário e o adicione ao grupo iam-group-data-engineer
+    Entre no seu painel AWS com as credenciais desse novo usuário que foi adicionado ao grupo.
+    Clique no nome do seu usuário no menu superior direito
+    Clique em Switch Roles
+    Preencha os campos:
+        Account: número da sua conta AWS (12 dígitos)
+        Role: role-production-data-engineer
+        Display Name: Nome da sua escolha ex: Data Engineer
+
+Agora esse usuário assumiu o role role-production-data-engineer e só tem as permissões descritas dentro da política IamPolicyDataEngineer.
+
+Use isso para separar permissões para grupos diferentes de usuários: Analistas, Desenvolvedores, Cientistas de Dados, Admins, etc.

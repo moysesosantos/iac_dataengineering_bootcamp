@@ -1,0 +1,14 @@
+{
+    "Name": "Moyses Santos",
+    "Country": "BR",
+    "Sports": [
+      "Jiu Jitsu",
+      "Walking",
+      "Netflix"
+      
+    ],
+    "Address": {
+      "Street": "Rua Oliveira Fagundes, 217",
+      "House": "Casa 2"
+    }
+  }
