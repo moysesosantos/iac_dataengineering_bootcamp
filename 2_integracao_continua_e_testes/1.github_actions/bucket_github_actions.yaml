@@ -1,0 +1,18 @@
+## Criação do bucket
+Description: Cria bucket S3 bucket_github_actions
+
+Resources:
+
+  BucketPrimeiroS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-namehere-github-actions-bucket
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
