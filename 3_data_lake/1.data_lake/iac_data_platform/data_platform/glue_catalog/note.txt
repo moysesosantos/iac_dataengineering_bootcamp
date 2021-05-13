@@ -1,0 +1,10 @@
+## Anotação complementar sobre rotina no Cron, usada no Glue Crawler
+
+## Usado no parametro:
+
+schedule_expression="cron(0/15 * * * ? *)"
+
+
+Crontab guru
+
+https://crontab.guru/
